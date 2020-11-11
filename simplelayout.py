@@ -12,9 +12,7 @@ def main():
     parser.add_argument("--positions", type=int, nargs="*")  # 与unit_n一致 代表每个组件的位置编号 从1开始 上限 不满足退出
     parser.add_argument("--outdir", type=str, default="example_dir")
     parser.add_argument("--file_name", type=str, default="example")
-
-    args = parser.parse_args('--board_grid 100 --unit_grid 10 --unit_n 3 --positions 1 15 13 --outdir dir1/dir2 --file_name example'.split())
-    # args = parser.parse_args()
+    args = parser.parse_args()
 
 
     board_grid = args.board_grid

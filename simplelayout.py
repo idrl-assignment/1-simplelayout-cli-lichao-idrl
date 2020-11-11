@@ -1,8 +1,6 @@
 import argparse
 import sys
 import os
-import scipy.io as sio
-import matplotlib.pyplot as plt
 
 
 def main():
@@ -45,8 +43,8 @@ def main():
     file_name_jpg = outdir + "/" + file_name + ".jpg"
 
     os.makedirs(outdir)
-    sio.savemat(file_name_mat, {})
-    plt.savefig(file_name_jpg)
+    open(file_name_jpg, 'w')
+    open(file_name_mat, 'w')
 
 
 
